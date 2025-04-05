@@ -130,7 +130,11 @@ def delete_task(task_id):
 
 # ========== STARTUP ==========
 
+# ========== STARTUP ==========
+
 if __name__ == '__main__':
-    print("🚀 Task Tracker Backend Running at http://localhost:5000")
+    import os
+    port = int(os.environ.get('PORT', 5000))  # Render sets PORT
+    print(f"🚀 Task Tracker Backend Running on 0.0.0.0:{port}")
     register_routes(app)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)
