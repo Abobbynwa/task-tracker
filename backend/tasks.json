@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "user_id": 1,
+        "title": "Test task",
+        "status": "todo",
+        "due_date": "2025-04-20"
+    },
+    {
+        "id": 2,
+        "user_id": 4,
+        "title": "my prayer",
+        "status": "done",
+        "due_date": "2025-04-24"
+    }
+]
